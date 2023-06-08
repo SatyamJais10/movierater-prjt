@@ -1,0 +1,151 @@
+
+body{
+    color: black;
+}
+#side{
+
+display: flex;
+
+}
+.ul{
+    display:flex;
+    margin : 20px;
+    border-right: 1px solid black;
+}
+ 
+.hello {
+    padding-bottom: 20px;
+    padding-left: 5px;
+  display: flex;
+}
+.hello:hover{
+    border: 1px solid black;
+
+}
+.hell {
+    padding-top: 10px;
+  display: flex;
+}
+.hell:hover{
+    border: 1px solid black;
+
+}
+.movieheader{
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+.movieheader p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+}
+.search-btn{
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 1000px;
+    padding-right: 30px;
+}
+.helo {
+    padding-left: 1px ;
+}
+.search-btn input{
+    outline: none;
+    border: none;
+    padding: .5rem .3rem;
+    font-size: .9rem;
+    background-color: rgba(0, 0, 0, 0.123);
+    color: black;
+    border-radius: 5px;
+}
+.search-btn input:hover{
+    outline: 2px solid #A01D1E;
+}
+
+
+.movieContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+.movieCard{
+    margin: 1rem;
+    width: 200px;
+}
+
+.addd{
+    margin-top: 30px;
+    margin-left: 10px;
+    border: 2px solid black;
+}
+
+.addd:hover{
+    background-color:antiquewhite;
+}
+
+.moviePoster{
+    width: 90%;
+        height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.moviePoster:hover{
+    width:100%;
+}
+
+.movieTitle{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .6rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+}
+.movieTitle:hover{
+   font-size: 1.1rem;
+   text-overflow: initial;
+}
+
+
+
+.search-result{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    
+
+
+.movieContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.search-result{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
