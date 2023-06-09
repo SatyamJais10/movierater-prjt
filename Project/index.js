@@ -26,11 +26,22 @@ fetch(`https://api.themoviedb.org/3//discover/movie?sort_by=popularity.desc&api_
       movieTitle.classList.add('movieTitle');
       movieTitle.innerText = movie.title;
 
+      const rating = document.createElement('div');
+      rating.classList.add('rating');
 
-     
+      const rate = document.createElement('span');
+      rate.classList.add('rate');
+      rate.innerText = `${movie.vote_average}/10`;
+      const year = document.createElement('span');
+      year.classList.add('year');
+      year.innerText = movie.release_date.split('-')[0];
 
+      rating.append(year);
+      rating.append(rate);
       movieCard.append(moviePoster);
       movieCard.append(movieTitle);
+
+      movieCard.append(rating);
 
       movieContainer.append(movieCard);
     });
@@ -55,7 +66,7 @@ fetch(`https://api.themoviedb.org/3//discover/movie?sort_by=popularity.desc&api_
   
   
       movies.forEach((movie) => {
-        const { poster_path, title } = movie;
+        const { poster_path, title , release_date, vote_average } = movie;
   
         const movieContainer = document.createElement('div');
         movieContainer.classList.add('movieCard');
@@ -67,6 +78,10 @@ fetch(`https://api.themoviedb.org/3//discover/movie?sort_by=popularity.desc&api_
         movieContainer.innerHTML = `
           <img src="${posterUrl}" alt="${title}" class="moviePoster">
           <div class="movieTitle">${title}</div>
+          <div class="rating">
+          <span class="rate">${vote_average}</span>
+          <span class="year">${release_date ? release_date.slice(0, 4) : ''}</span>
+        </div>
         `;
   
         searchResults.append(movieContainer);
@@ -86,3 +101,4 @@ fetch(`https://api.themoviedb.org/3//discover/movie?sort_by=popularity.desc&api_
     
   });
   
+
