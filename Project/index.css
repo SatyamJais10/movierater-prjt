@@ -17,6 +17,7 @@ display: flex;
     padding-bottom: 20px;
     padding-left: 5px;
   display: flex;
+  font-size: 1.2em;
 }
 .hello:hover{
     border: 1px solid black;
@@ -25,6 +26,8 @@ display: flex;
 .hell {
     padding-top: 10px;
   display: flex;
+  font-size: 1.2em;
+  
 }
 .hell:hover{
     border: 1px solid black;
@@ -51,7 +54,7 @@ display: flex;
 .search-btn{
     align-items: center;
     border-radius: 5px;
-    padding-left: 1000px;
+    padding-left: 1150px;
     padding-right: 30px;
 }
 .helo {
@@ -85,6 +88,8 @@ display: flex;
 .movieCard{
     margin: 1rem;
     width: 225px;
+    background-color: black;
+
 }
 
 .addd{
@@ -101,7 +106,7 @@ display: flex;
     width: 100%;
         height: 45vh;
     object-fit: cover;
-    border-radius: 10px;
+   
 }
 
 
@@ -111,13 +116,12 @@ display: flex;
     margin: .6rem 0;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+   
     width: 180px;
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.movieTitle:hover{
-   font-size: 1.1rem;
-   text-overflow: initial;
-}
+
 
 
 
@@ -144,6 +148,13 @@ display: flex;
 .search-result{
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-weight: 600;
 }
 
 
