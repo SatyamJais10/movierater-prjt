@@ -13,5 +13,5 @@ This is a Movie Search web application that allows users to explore popular movi
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript
 - Fetch API
